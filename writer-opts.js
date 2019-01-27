@@ -45,6 +45,8 @@ function getWriterOpts () {
         return
       } else if (commit.type === `docs`) {
         commit.type = `Documentation`
+      } else if (commit.type === `chores`) {
+        commit.type = `Chores`
       } else if (commit.type === `style`) {
         commit.type = `Styles`
       } else if (commit.type === `refactor`) {
